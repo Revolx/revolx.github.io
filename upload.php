@@ -40,5 +40,6 @@ if(isset($_POST['secret']))
 else
 {
     echo 'No post data recieved';
-}
+}'
+exit();
 ?>
