@@ -11,7 +11,7 @@ return [
     'redirect_url' => 'http://revolx.me/',
 
     /* This is a list of IPs that can access the gallery page (Leave empty for universal access) */
-    'allowed_ips' => ['222.153.242.76', '0.0.0.0'],
+    'allowed_ips' => [],
 
     /* Page title of the gallery page */
     'page_title' => 'My Upload Site',
