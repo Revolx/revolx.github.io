@@ -5,7 +5,7 @@ return [
     'secure_key' => 'revolxisagod',
 
     /* This is the url your output will be, usually http://www.domain.com/u/, also going to this url will be the gallery page */
-    'output_url' => 'http://revolx.me/u/',
+    'output_url' => 'http://revolx.me/image/',
 
     /* This is a redirect url if the script is accessed directly */
     'redirect_url' => 'http://revolx.me/',
