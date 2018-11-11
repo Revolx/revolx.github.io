@@ -56,6 +56,7 @@
         <li>Information</li><br />
         <section>
             <h3>Commands</h3>
+		<h2>More info Regarding Commands: \help commandname</h2>
             <h4>Moderation Commands</h4>
             <div class="table-wrapper">
                 <table class="alt">
@@ -63,24 +64,24 @@
                         <tr><th>Command</th><th>Description</th><th>Aliases</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>\Ban</td><td></td><td></td></tr>
-                        <tr><td>\Kick</td><td></td><td></td></tr>
-                        <tr><td>\Mute</td><td></td><td></td></tr>
-                        <tr><td>\Unmute</td><td></td><td></td></tr>
-                        <tr><td>\Purge</td><td></td><td></td></tr>
+                        <tr><td>\Ban</td><td>Ban a user from the server.</td><td>None</td></tr>
+			<tr><td>\HackBan</td><td>Bans a user if they are within or not within the server.</td><td>None</td></tr>
+                        <tr><td>\Kick</td><td>Kick a user from the server.</td><td>None</td></tr>
+                        <tr><td>\Mute</td><td>Gives a user the "Muted" role.</td><td>Silence, M</td></tr>
+                        <tr><td>\Unmute</td><td>Removed a user from the "Muted" role.</td><td>UM</td></tr>
+                        <tr><td>\Purge</td><td>Deletes messages from channel.</td><td>None</td></tr>
+			<tr><td>\Warn</td><td>Warns a user within the server.</td><td></td></tr>
+			<tr><td>More Moderation Commands Coming SoonTM.</td></tr>
                     </tbody>
                 </table>
             </div>
-            <h4>Fun Commands</h4>
+            <h4>Admin Commands</h4>
             <div class="table-wrapper">
                 <table class="alt">
                     <thead><tr><th>Command</th><th>Description</th><th>Aliases</th></tr></thead>
                     <tbody>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td>\Config</td><td>View or change settings for the server.</td><td>CFG, Conf</td></tr>
+                        <tr><td>\Reset</td><td>Reset the settings for the server.</td><td>None</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -89,24 +90,47 @@
                 <table class="alt">
                 <thead><tr><th>Command</th><th>Description</th><th>Aliases</th></tr></thead>
                     <tbody>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td>\Radio</td><td>Play a Radio from a Selected Range. [Currently Admin Only]</td><td>None</td></tr>
+                        <tr><td>\Stop</td><td>Stop the Music from Playing. [Currently Admin Only]</td><td>Leave</td></tr>
                     </tbody>
                 </table>
             </div>
-            <h4>Utility Commands</h4>
+            <h4>Game Commands</h4>
             <div class="table-wrapper">
                 <table class="alt">
                 <thead><tr><th>Command</th><th>Description</th><th>Aliases</th></tr></thead>
                     <tbody>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td>\Slots</td><td>A Super Simply No Reward Slots System</td><td>None</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>Emote Commands</h4>
+            <div class="table-wrapper">
+                <table class="alt">
+                <thead><tr><th>Command</th><th>Description</th><th>Aliases</th></tr></thead>
+                    <tbody>
+                        <tr><td>\AddEmote</td><td>Add an Emote to the server via a URL</td><td>None</td></tr>
+                        <tr><td>\Steal</td><td>Steal an Emote from another server via an Emote</td><td>None</td></tr>
+                        <tr><td>\RemoveEmote</td><td>Remove an emote from the server.</td><td>DelEmote, RemEmote, RemoveEmoji, DelEmoji</td></tr>
+                        <tr><td>\Disco</td><td>Party Along.</td><td>None</td></tr>
+                        <tr><td>\Emojify</td><td>Says your text in Emotes</td><td>None</td></tr>
+			<tr><td>\Emotes</td><td>Displays the servers avaiable emotes.</td><td>EmojiList, Emojis, Emotes, Emoji</td></tr>
+			<tr><td>\Big</td><td>Turn an Emote into an Enlarged Picture</td><td>Jumbo, Enlarge</td></tr>
+			<tr><td>\Shrug</td><td>Just Shrug</td><td>None</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>Information Commands</h4>
+            <div class="table-wrapper">
+                <table class="alt">
+                <thead><tr><th>Command</th><th>Description</th><th>Aliases</th></tr></thead>
+                    <tbody>
+                        <tr><td>\Docs</td><td>Gets a query for discord.js docs.</td><td>DiscordJSDocs, D.jsDocs</td></tr>
+                        <tr><td>\Memory</td><td>Displays my current memory statistics.</td><td>Mem</td></tr>
+                        <tr><td>\Perms</td><td>Check yours and others server permissions.</td><td>None</td></tr>
+                        <tr><td>\RoleInfo</td><td>View roleinformation of the given role</td><td>None</td></tr>
+                        <tr><td>\UserInfo</td><td>Gives some useful userinfo statistics</td><td>Uinfo, Info</td></tr>
+			<tr><td>\ServerInfo</td><td>Gives some useful server information</td><td>Sinfo</td></tr>
                     </tbody>
                 </table>
             </div>
