@@ -11,7 +11,7 @@
       function onClick () {
         document.removeEventListener('click', onClick)
         let text = document.getElementById('text')
-        let audio = new Audio('https://i.vap.cx/ufinnadiebaby.mp3')
+        let audio = new Audio('./memeaudio.mp3')
         audio.play()
         
         window.audio = audio
@@ -24,7 +24,7 @@
           text.innerText = 'and'
         }, 6500)
         setTimeout(() => {
-          text.innerText = 'Well'
+          text.innerText = 'well...'
         }, 9500)
 
         setTimeout(() => {
