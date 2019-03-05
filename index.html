@@ -1,51 +1,184 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tiny Tuba</title>
-        <meta name="description" content="Tiny Tuba">
-        <style type="text/css">
-            html, body, table {
-                height: 100%;
-                width: 100%;
-                margin: 0px;
-                padding: 0px;
-                text-align: center;
-            }
-            audio {
-                display: none;
-                position: fixed;
-                margin-left: 1000000px;
-            }
-            img {
-                cursor: pointer;
-            }
-        </style>
-        <script type="text/javascript">
-            var playCount = 0
-            function init() {
-                var tuba=document.getElementById("tuba"); 
-            }
-            function playSound() { 
-                tuba.load();
-                tuba.play();
-                playCount++
-            }                 
-        </script>
+	<head>
+		<link rel="icon" href="https://cdn.discordapp.com/avatars/184598052747739136/a_3d447bbd49b149e58208f4d2b5e138b1.gif?size=2048" type="image/gif">
+		<title>Revolx Development</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+<!-- 		<meta data-react-helmet="true" property="og:site_name" content="Revolx Development"> -->
+		<meta data-react-helmet="true" http-equiv="cleartype" content="on"><meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes"><meta data-react-helmet="true" name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes"><meta data-react-helmet="true" property="og:image" content="https://cdn.discordapp.com/avatars/184598052747739136/a_7c44d114fc550ada42b4a8b002b127d3.gif"><meta data-react-helmet="true" name="msapplication-TileColor" content="#cb3837"><meta data-react-helmet="true" name="msapplication-TileImage" content="https://cdn.discordapp.com/avatars/184598052747739136/a_7c44d114fc550ada42b4a8b002b127d3.gif"><meta data-react-helmet="true" name="msapplication-config" content="https://revolx.me"><meta data-react-helmet="true" name="theme-color" content="#cb3837"><meta data-react-helmet="true" name="description" content="The Home to Revolx Development."><meta data-react-helmet="true" property="og:description" content="The Home to Revolx Development."><meta data-react-helmet="true" property="og:title" content="Revolx Development"><meta data-react-helmet="true" property="og:url" content="https://www.revolx.me/"><meta data-react-helmet="true" property="og:site_name" content="Revolx Development"><meta data-react-helmet="true" name="keywords" content="Revolx,Website,Masaki"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="twitter:url" content="https://www.revolx.me/"><meta data-react-helmet="true" name="twitter:title" content="Revolx Development"><meta data-react-helmet="true" name="twitter:description" content="The Home to Revolx Development.">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
 
-    </head>
-    <body onload="init();">
-        <table>
-            <tr>
-                <td>
-                    <img onclick="playSound();" src="images/tuba.jpg" alt>
-                    <audio controls="controls" id="tuba">
-                        <source src="/tuba.mp3" type="audio/mp3">
-                    </audio>
-                </td>
-            </tr>
-        </table>
-    </body>
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <span class="icon fa-diamond"></span>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <h1>Revolx Development</h1>
+                <p>The Website Home Page for Revolx Development<br />
+                Discord Bot Developer of Masaki#4334</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="invite">Invite</a></li>
+                <li><a href="#masaki">Masaki</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+		<li><a href="#other">Other</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Main -->
+<div id="main">
+<!-- Masaki -->
+    <article id="masaki">
+        <h2 class="major">Masaki</h2>
+        <p><b>Created</b> : Monday Feburary 5th 2018<br />
+        <b>Developer</b> : Lê Dieu Revolx#0001<br />
+        <b>Version</b> : 1.0.12<br />
+        <i>Coded in JavaScript using <a href="https://discord.js.org/#/">Discord.js</a></i></p>
+        <p><b>Masaki</b> is a Discord Bot which was created for a challenge and has slowly developed to greater lengths since the first server joined. Originally coded on Discord.js Stable but has now transitioned to Discord.js Master.</p>
+        <h3 class="inner">Features</h3>
+        <li>Moderation</li>
+        <li>Custom Config</li>
+        <li>Music</li>
+        <li>Stats</li>
+        <li>Information</li><br />
+        <section>
+            <h3>Commands</h3>
+		<h4>More info Regarding Commands: \help commandname</h4>
+            <h4>Moderation Commands</h4>
+            <div class="table-wrapper">
+                <table class="alt">
+                    <thead>
+                        <tr><th>Command</th><th>Description</th><th>Aliases</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>\Ban</td><td>Ban a user from the server.</td><td>None</td></tr>
+			<tr><td>\HackBan</td><td>Bans a user if they are within or not within the server.</td><td>None</td></tr>
+                        <tr><td>\Kick</td><td>Kick a user from the server.</td><td>None</td></tr>
+                        <tr><td>\Mute</td><td>Gives a user the "Muted" role.</td><td>Silence, M</td></tr>
+                        <tr><td>\Unmute</td><td>Removed a user from the "Muted" role.</td><td>UM</td></tr>
+                        <tr><td>\Purge</td><td>Deletes messages from channel.</td><td>None</td></tr>
+			<tr><td>\Warn</td><td>Warns a user within the server.</td><td></td></tr>
+			<tr><td>More Moderation Commands Coming SoonTM.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>Admin Commands</h4>
+            <div class="table-wrapper">
+                <table class="alt">
+                    <thead><tr><th>Command</th><th>Description</th><th>Aliases</th></tr></thead>
+                    <tbody>
+                        <tr><td>\Config</td><td>View or change settings for the server.</td><td>CFG, Conf</td></tr>
+                        <tr><td>\Reset</td><td>Reset the settings for the server.</td><td>None</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>Music Commands</h4>
+            <div class="table-wrapper">
+                <table class="alt">
+                <thead><tr><th>Command</th><th>Description</th><th>Aliases</th></tr></thead>
+                    <tbody>
+                        <tr><td>\Radio</td><td>Play a Radio from a Selected Range. [Currently Admin Only]</td><td>None</td></tr>
+                        <tr><td>\Stop</td><td>Stop the Music from Playing. [Currently Admin Only]</td><td>Leave</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>Game Commands</h4>
+            <div class="table-wrapper">
+                <table class="alt">
+                <thead><tr><th>Command</th><th>Description</th><th>Aliases</th></tr></thead>
+                    <tbody>
+                        <tr><td>\Slots</td><td>A Super Simply No Reward Slots System</td><td>None</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>Emote Commands</h4>
+            <div class="table-wrapper">
+                <table class="alt">
+                <thead><tr><th>Command</th><th>Description</th><th>Aliases</th></tr></thead>
+                    <tbody>
+                        <tr><td>\AddEmote</td><td>Add an Emote to the server via a URL</td><td>None</td></tr>
+                        <tr><td>\Steal</td><td>Steal an Emote from another server via an Emote</td><td>None</td></tr>
+                        <tr><td>\RemoveEmote</td><td>Remove an emote from the server.</td><td>DelEmote, RemEmote, RemoveEmoji, DelEmoji</td></tr>
+                        <tr><td>\Disco</td><td>Party Along.</td><td>None</td></tr>
+                        <tr><td>\Emojify</td><td>Says your text in Emotes</td><td>None</td></tr>
+			<tr><td>\Emotes</td><td>Displays the servers avaiable emotes.</td><td>EmojiList, Emojis, Emotes, Emoji</td></tr>
+			<tr><td>\Big</td><td>Turn an Emote into an Enlarged Picture</td><td>Jumbo, Enlarge</td></tr>
+			<tr><td>\Shrug</td><td>Just Shrug</td><td>None</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>Information Commands</h4>
+            <div class="table-wrapper">
+                <table class="alt">
+                <thead><tr><th>Command</th><th>Description</th><th>Aliases</th></tr></thead>
+                    <tbody>
+                        <tr><td>\Docs</td><td>Gets a query for discord.js docs.</td><td>DiscordJSDocs, D.jsDocs</td></tr>
+                        <tr><td>\Memory</td><td>Displays my current memory statistics.</td><td>Mem</td></tr>
+                        <tr><td>\Perms</td><td>Check yours and others server permissions.</td><td>None</td></tr>
+                        <tr><td>\RoleInfo</td><td>View roleinformation of the given role</td><td>None</td></tr>
+                        <tr><td>\UserInfo</td><td>Gives some useful userinfo statistics</td><td>Uinfo, Info</td></tr>
+			<tr><td>\ServerInfo</td><td>Gives some useful server information</td><td>Sinfo</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </article>
+
+<!-- About -->
+    <article id="about">
+        <h2 class="major">About</h2>
+	    <p>My Name is Matt otherwise known as Revolx Online. I am the Developer of a Discord Bot named Masaki which is coded using the library Discord.js. Masaki is currently sitting at over 3,500lines of code and is ever so slowly growing more.
+
+If you would like to learn alittle more about Masaki, Invite Her to Your Discord Server please feel free to visit my Website [Public Release SoonTM]
+
+Masaki is a Discord Bot which was created for a challenge and has slowly developed to greater lengths since the first server joined. Originally coded on Discord.js Stable but has now transitioned to Discord.js Master. If you are interested in learning more about the Library which Masaki was coded on please feel free to check out their Documentation. 
+	    </p>
+	</article>
+
+<!-- Contact -->
+	<article id="contact">
+		<h2 class="major">Contact</h2>
+
+		<h3>Direct Methods Of Contact</h3>
+
+		<p>Discord : Lê Dieu Revolx#0001<br />
+		   Steam : <a href="https://www.SteamCommunity.com/id/Revolx">SteamCommunity.com/id/Revolx</a><br /><br /><br />
+		   For JavaScript Support Visit <a href="https://discord.gg/plexidev">Plexi Development Discord</a></p>
+	</article>
+<!-- Other -->
+    <article id="other">
+        <h2 class="major">Other</h2>
+	    <p>Few Random Pages attached to my website!<br><br><a href="/horse">The Infinite Horse</a><br>
+		<a href="/meme">Soo... MnM's ttt</a>
+	    </p>
+	</article>
+</div>
+		<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Revolx Development 2018 <a href="http://www.revolx.me/"></a>.</p>
+			</footer>
+	</div>
+	<!-- BG -->
+	<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
 </html>
