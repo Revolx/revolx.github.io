@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tiny Tuba</title>
+        <meta name="description" content="Tiny Tuba">
+        <style type="text/css">
+            html, body, table {
+                height: 100%;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+            }
+            audio {
+                display: none;
+                position: fixed;
+                margin-left: 1000000px;
+            }
+            img {
+                cursor: pointer;
+            }
+        </style>
+        <script type="text/javascript">
+            var playCount = 0
+            function init() {
+                var tuba=document.getElementById("tuba"); 
+            }
+            function playSound() { 
+                tuba.load();
+                tuba.play();
+                playCount++
+            }                 
+        </script>
+
+    </head>
+    <body onload="init();">
+        <table>
+            <tr>
+                <td>
+                    <img onclick="playSound();" src="images/tuba.jpg" alt>
+                    <audio controls="controls" id="tuba">
+                        <source src="/tuba.mp3" type="audio/mp3">
+                    </audio>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
